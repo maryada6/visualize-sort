@@ -1,0 +1,160 @@
+.array-container {
+    position: absolute;
+    overflow-y: auto;
+    overflow-x: hidden;
+    margin: auto;
+    padding-top: 5%;
+    padding-bottom: 18%;
+    padding-left: 0.8%;
+    padding-right: 0.8%;
+    top: 0;
+    left: 3.5%;
+    right: 0;
+    bottom: 0;
+}
+
+.array-bar {
+    width: 3.5px;
+    background-color: rgb(185, 177, 177);
+    display: inline-block;
+    margin: 0 1px;
+}
+
+
+/** Slider **/
+.slider {
+    -webkit-appearance: none;
+    position: absolute;
+    margin-left: 47%;
+    top: 97%;
+    width: 70%;
+    height: 0.4%;
+    cursor: pointer;
+    background: linear-gradient(to right, blue 50%, rgb(185, 177, 177) 0%);
+    transform: translateX(-50%);
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 20px;
+    height: 20px;
+    background: white;
+    border-radius: 50%;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.432);
+}
+
+
+
+/** Button **/
+.button {
+	margin: 1em;
+	padding: 1em 2em;
+	background: #eeebeb;
+    z-index: 1;
+    color: black;
+    font-size: 88%;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    border: 2.0px solid;
+    
+    overflow: hidden;
+    width: 25%;
+}
+
+.button:hover {
+    cursor: pointer;
+}
+
+
+/** Generate button **/
+.button.button--generate {
+    position: absolute;
+    left: 2.3%;
+    top: 100.8%;
+    opacity: 1;
+    background-color: #0850ec;
+    color: #fff;
+    border-color: rgb(49, 46, 46);
+}
+
+.button.button--generate:hover {
+    background-color: rgb(2, 2, 214);
+}
+
+
+/** Sort buttons **/
+.sort-buttons {
+    display: inline-block;
+    position: absolute;
+    left: 30%;
+    top: 101%;
+}
+
+.button.button--sort:hover {
+    opacity: 1;
+    background-color: rgb(49, 46, 46);
+    color: #fff;
+    border-color: #fff;
+}
+
+
+@media (max-width: 375px) {
+    .array-bar {
+        width: 15px !important;
+    }
+
+    .button {
+        display: list-item;
+        width: 60%;
+    }
+
+    .button.button--generate {
+        left: 14%;
+    }
+
+    .sort-buttons {
+        width: 100%;
+        left: 14%;
+        top: 112%;
+    }
+}
+
+@media (min-width: 376px) and (max-width: 450px) {
+    .array-bar {
+        width: 15px;
+    }
+
+    .button {
+        display: list-item;
+        width: 60%;
+    }
+
+    .button.button--generate {
+        left: 14%;
+    }
+
+    .sort-buttons {
+        width: 100%;
+        left: 14%;
+        top: 112%;
+    }
+}
+
+@media (min-width: 451px) and (max-width: 770px) {
+    .array-bar {
+        width: 8px;
+    }
+}
+
+@media (min-width: 1000px) and (max-width: 1100px) {
+    .array-bar {
+        width: 5px;
+    }
+}
+
+@media (min-width: 1101px) and (max-width: 1265px) {
+    .array-container {
+        padding-left: 8%;
+        padding-right: 8%;
+    }
+}
