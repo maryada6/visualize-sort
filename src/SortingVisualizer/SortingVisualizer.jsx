@@ -168,6 +168,7 @@ export class SortingVisualizer extends React.Component {
 
       if (animations[i][0] === "a" || animations[i][0] === "b") {
         const [temp, bar_one_id, bar_two_id] = animations[i];
+        console.log(temp);
         const color = (animations[i][0] === "a") ? MAIN_COLOR : BACKGROUND_COLOR;
 
         setTimeout(
@@ -182,6 +183,7 @@ export class SortingVisualizer extends React.Component {
         setTimeout(
           () => {
             const [temp, bar_id, new_height] = animations[i];
+            console.log(temp);
             arrBars[bar_id].style.height = `${new_height}px`;
           }, i * SPEED
         );
@@ -208,6 +210,7 @@ export class SortingVisualizer extends React.Component {
 
       if (animations[i][0] === "a" || animations[i][0] === "b") {
         const [temp, bar_one_id, bar_two_id] = animations[i];
+        console.log(temp);
         const color = (animations[i][0] === "a") ? MAIN_COLOR : BACKGROUND_COLOR;
 
         setTimeout(
@@ -220,7 +223,7 @@ export class SortingVisualizer extends React.Component {
       } else {
         //
         const [temp, bar_id, new_height] = animations[i];
-
+        console.log(temp);
         setTimeout(
           () => {
             arrBars[bar_id].style.height = `${new_height}px`;
