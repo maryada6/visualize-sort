@@ -1,4 +1,4 @@
-### Visualize sorting
+### Visualize sorting https://visualize-sort.netlify.app/
 
 ### Brute Force Algorithms
 
